@@ -1,10 +1,14 @@
 import React from "react";
 
-function Header({ loggedIn, handleLoggedInClick }) {
+function Header({ loggedIn, handleLoggedInClick, handleIncreaseFontClick }) {
   return (
-    <button onClick={handleLoggedInClick}>
-      {loggedIn ? "Log Out" : "Log In"}
-    </button>
+    <div>
+      <button onClick={handleLoggedInClick}>
+        {loggedIn ? "Log Out" : "Log In"}
+      </button>
+      <br />
+      <button onClick={handleIncreaseFontClick}>Increase Font Size</button>
+    </div>
   );
 }
 
